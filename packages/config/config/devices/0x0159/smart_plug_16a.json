@@ -108,6 +108,140 @@
 			"minValue": 0,
 			"maxValue": 32535,
 			"defaultValue": 0
+		},
+		{
+			"#": "50",
+			"label": "Down value",
+			"valueSize": 2,
+			"unit": "W",
+			"minValue": 0,
+			"maxValue": 4000,
+			"defaultValue": 30
+		},
+		{
+			"#": "51",
+			"label": "Up value",
+			"valueSize": 2,
+			"unit": "W",
+			"minValue": 0,
+			"maxValue": 4000,
+			"defaultValue": 50
+		},
+		{
+			"#": "52",
+			"label": "Action in case of exceeding defined power values (parameters 50 and 51)",
+			"valueSize": 1,
+			"defaultValue": 6,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Function inactive",
+					"value": 0
+				},
+				{
+					"label": "turn the associated devices on, once the power drops below Down value (parameter no. 50)",
+					"value": 1
+				},
+				{
+					"label": "Turn the associated devices off, once the power drops below Down value (parameter no. 50)",
+					"value": 2
+				},
+				{
+					"label": "Turn the associated devices on, once the power rises above Up value (parameter no. 51)",
+					"value": 3
+				},
+				{
+					"label": "Turn the associated devices off, once the power rises above Up value (parameter no. 51)",
+					"value": 4
+				},
+				{
+					"label": "1 and 4 combined. Turn the associated devices on, once the power drops below Down value (parameter no. 50). Turn the associated devices off, once the power rises above Up value (parameter no. 51).",
+					"value": 5
+				},
+				{
+					"label": "2 and 3 combined. Turn the associated devices off, once the power drops below Down value (parameter 50). Turn the associated devices on, once the power rises above Up value (parameter no. 51).",
+					"value": 6
+				}
+			]
+		},
+		{
+			"#": "70",
+			"label": "Overload safety switch",
+			"valueSize": 2,
+			"unit": "W",
+			"minValue": 0,
+			"maxValue": 4000,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Function not active",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "71",
+			"label": "Power threshold",
+			"valueSize": 2,
+			"unit": "W",
+			"minValue": 0,
+			"maxValue": 4000,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Function not active",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "72",
+			"label": "Time interval",
+			"valueSize": 1,
+			"unit": "minutes",
+			"minValue": 0,
+			"maxValue": 125,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Immediate sending of notification when active power drops bellow threshold set in parameter 71",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "73",
+			"label": "Turn Smart Plug OFF",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Function disabled",
+					"value": 0
+				},
+				{
+					"label": "Turn OFF relay once the notification Program completed is sent",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "74",
+			"label": "Enable/disable LED",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "LED is disabled",
+					"value": 0
+				},
+				{
+					"label": "LED is enabled",
+					"value": 1
+				}
+			]
 		}
 	]
 }
